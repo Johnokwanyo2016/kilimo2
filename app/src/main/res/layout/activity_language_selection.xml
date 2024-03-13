@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LanguageSelection">
+
+    <!-- Language selection text -->
+    <TextView
+        android:id="@+id/textViewLanguageSelection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Language:"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp" />
+
+    <!-- English radio button -->
+    <RadioButton
+        android:id="@+id/radioButtonEnglish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="English"
+        android:textSize="26dp"
+        app:layout_constraintTop_toBottomOf="@id/textViewLanguageSelection"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <!-- Kiswahili radio button -->
+    <RadioButton
+        android:id="@+id/radioButtonKiswahili"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kiswahili"
+        android:textSize="26dp"
+        app:layout_constraintTop_toBottomOf="@id/radioButtonEnglish"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp" />
+
+    <!-- French radio button -->
+    <RadioButton
+        android:id="@+id/radioButtonFrench"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="French"
+        android:textSize="26dp"
+        app:layout_constraintTop_toBottomOf="@id/radioButtonKiswahili"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp" />
+
+    <!-- Next button at the bottom -->
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
